@@ -22,5 +22,6 @@
     "jsx": "react-jsx"
   },
   "include": ["src", "tsconfig.node.json"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "files": ["twin.d.ts"]
 }

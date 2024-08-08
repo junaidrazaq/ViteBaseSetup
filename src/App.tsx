@@ -1,4 +1,5 @@
 import { useState } from "react";
+import tw, { styled } from "twin.macro";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,11 +15,13 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Title>Click on the Vite and React logos to learn more</Title>
     </>
   );
 }
 
 export default App;
+
+const Title = styled.div`
+  ${tw`flex justify-center items-center bg-red-500`}
+`;

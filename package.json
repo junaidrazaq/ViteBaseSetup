@@ -12,7 +12,10 @@
   "dependencies": {
     "@tailwindcss/forms": "^0.5.3",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "styled-components": "^6.1.12",
+    "twin.macro": "^3.4.1",
+    "vite-plugin-babel-macros": "^1.0.6"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
@@ -21,7 +24,7 @@
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.20",
-    "eslint": "^9.8.0",
+    "eslint": "^8.57.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
@@ -36,5 +39,10 @@
     "vite": "^5.4.0",
     "vite-plugin-eslint": "^1.8.1",
     "vite-tsconfig-paths": "^4.0.7"
+  },
+  "babelMacros": {
+    "twin": {
+      "preset": "styled-components"
+    }
   }
 }
