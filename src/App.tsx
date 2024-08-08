@@ -1,12 +1,14 @@
 import { useState } from "react";
 import tw, { styled } from "twin.macro";
 
+import Container from "./Common/Container";
+
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <h1>Vite + React</h1>
+    <Container>
+      <h1>Hello and welcome to my portfolio!</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -16,7 +18,7 @@ function App() {
         </p>
       </div>
       <Title>Click on the Vite and React logos to learn more</Title>
-    </>
+    </Container>
   );
 }
 
