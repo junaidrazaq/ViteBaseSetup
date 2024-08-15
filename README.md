@@ -25,7 +25,39 @@ Create an .eslintrc.json file in the root of your project directory, and include
 }
 ```
 
-4. Remove Existing Git History
+4. Add .gitignore
+Create an .gitignore file in the root of your project directory, and include the following configuration:
+```
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+.env
+.env.production
+tsconfig.node.tsbuildinfo
+
+# Editor directories and files
+.vscode
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+```
+
+5. Remove Existing Git History
 To start fresh with your project’s version control, remove the existing Git history:
 ```
 rm -rf .git
@@ -36,7 +68,7 @@ Then, initialize a new Git repository:
 git init
 ```
 
-5. Set Up a New GitHub Repository
+6. Set Up a New GitHub Repository
   - Create a new repository on GitHub.
   - Add the new repository as a remote:
 ```
@@ -51,14 +83,14 @@ git push -u origin main
 ```
 
 
-6. Build the Project
-Once your setup is complete, build the project to ensure everything is configured correctly:
+7. Build the Project
+O7nce your setup is complete, build the project to ensure everything is configured correctly:
 ```
 npm run build
 ```
 
 
-7. Start Development
+8. Start Development
 You’re now ready to start development. Run the following command to start the development server:
 ```
 npm run dev
